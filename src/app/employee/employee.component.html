@@ -1,0 +1,48 @@
+<p>employee works!</p>
+<p>Name: {{name}} </p>
+<p>Surname: {{surname}} </p>
+<p>Age: {{age>18 ? "Adult(Older than 18)":"Younger than 18"}} </p>
+<p>Company: {{companyText.value}} </p>
+<br>
+<br>
+<label>Company name:</label><br>
+<input #companyText (keyup)="0" [disabled]="enableProperty">
+<!-- text variable is displayed -->
+<br><br>
+<label>Age :</label><br>
+<input type="number" (keyup)="employeeAge($event)">
+
+<br>
+<br>
+Register : <input type="checkbox" (change)="getRegisterUser($event)" />
+
+<div *ngIf="registerProperty; then showText; else hideText">
+
+</div>
+
+<ng-template #showText>
+  <h1>Registered User</h1>
+</ng-template>
+
+<ng-template #hideText>
+  <h1>Unregistered User</h1>
+</ng-template>
+
+<div [ngSwitch]="lightStatus">
+  <div *ngSwitchCase="'GREEN'">Green</div>
+  <div *ngSwitchCase="'RED'">Red</div>
+  <div *ngSwitchCase="'YELLOW'">Yellow</div>
+  <div *ngSwitchDefault>Traffic light broken</div>
+</div>
+<br>
+<br>
+
+<select name="status" id="status" #statusSelect (change)="trafficLight(statusSelect.value)">
+  <option [value]="status" *ngFor="let status of statusList">{{status}}</option>
+</select>
+
+
+
+<!-- <div *ngFor=" let status of statusList">
+  <p>{{status}}</p>
+</div> -->

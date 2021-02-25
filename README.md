@@ -41,3 +41,6 @@ git remote add origin https://github.com/Miguel-Angel-Martin/Angular.git
 git branch -M main
 git push -u origin main
 ```
+https://www.youtube.com/watch?v=kM4RvcUisV0&list=PLN5jmnTStJNg44NzPJjPPFmCZCLpH8ja1&index=18
+
+https://github.com/albertoandroid/AngularFirstPart/tree/master/src/app
