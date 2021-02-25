@@ -1,8 +1,8 @@
 
+import { JsonPipe } from '@angular/common';
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ICourse } from 'src/interfaces/course';
 import { CourseService } from "../../services/course.service";
-import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-employees',
   templateUrl: './employees.component.html',
@@ -17,20 +17,19 @@ export class EmployeesComponent implements OnInit {
 
   courses = [];
   errorMessage = "";
+  status = "Form not submitted";
 
   constructor(private courseService: CourseService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.courseService.getCourses().subscribe(data => {
+      this.courses = data
+    }, error => this.errorMessage = error);
+  }
+  onSendForm(email) {
 
-
-    /* this.courseService.getCourses().subscribe(data => this.courses = data,
-      error => this.errorMessage = error);
- */
-    this.courseService.getCourses().pipe(map(data => { })).subscribe(result => {
-      console.log(result);
-    });
-    console.log("Courses: " + this.courses);
-    console.log("Error: " + this.errorMessage);
+    console.log(email);
+    this.status = "Form has been sent";
   }
 
 }

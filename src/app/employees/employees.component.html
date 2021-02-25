@@ -1,4 +1,18 @@
 <p>employees works!</p>
 <p>data from parent:<b>{{parentDataForChild}}</b></p>
 ______________________________________________________________________________
+<p>Email</p>
+<input #email type="text" name="">
+<hr>
+<button mat-raised-button color="primary" (click)="onSendForm(email.value)">Send Form</button>
+<hr>
+
+<div *ngIf="!errorMessage; then showCourses; else hideCourses">
+
+</div>
+<ng-template #showCourses>
+  <div *ngFor="let i of courses">{{i.id}}-{{i.name}}</div>
+</ng-template>
+<ng-template #hideCourses>{{errorMessage}}</ng-template>
+______________________________________________________________________________
 <app-employee></app-employee>
