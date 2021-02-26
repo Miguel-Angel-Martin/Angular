@@ -26,7 +26,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+
 ------
+
 ```
 echo "# Angular" >> README.md
 git init
@@ -41,6 +43,11 @@ git remote add origin https://github.com/Miguel-Angel-Martin/Angular.git
 git branch -M main
 git push -u origin main
 ```
+
 https://www.youtube.com/watch?v=kM4RvcUisV0&list=PLN5jmnTStJNg44NzPJjPPFmCZCLpH8ja1&index=18
 
 https://github.com/albertoandroid/AngularFirstPart/tree/master/src/app
+
+
+RxJS: https://www.youtube.com/watch?v=p_Aa2B1V5vk
+

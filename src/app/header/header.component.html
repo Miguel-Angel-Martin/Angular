@@ -1,4 +1,8 @@
-<mat-toolbar color="primary">
-  <ul> <a class="mat-display-1" routerLink="Employee">List</a> </ul>
-  <ul> <a class="mat-display-1" routerLink="Employees">Create</a></ul>
-</mat-toolbar>
+<h1 id="main-content-header">{{title}}</h1>
+<nav>
+  <a routerLink="/Employees">Employees</a>&nbsp;&nbsp;
+  <a routerLink="/Employee">Employee</a>&nbsp;&nbsp;
+  <a routerLink="/Home">Home</a>&nbsp;&nbsp;
+
+</nav>
+<router-outlet></router-outlet>

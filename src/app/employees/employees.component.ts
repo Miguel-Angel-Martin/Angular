@@ -1,5 +1,5 @@
 
-import { JsonPipe } from '@angular/common';
+
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ICourse } from 'src/interfaces/course';
 import { CourseService } from "../../services/course.service";

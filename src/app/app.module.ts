@@ -15,15 +15,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { HighlightDirective } from '../directives/highlight.directive';
+import { HomeComponent } from './home/home.component';
 
 /**
  *
  */
-const appRoutes: Routes = [
-  { path: 'Employee', component: EmployeeComponent },
-  { path: 'Employees', component: EmployeesComponent },
-  { path: '', redirectTo: '/Employee', pathMatch: 'full' },
-];
 
 @NgModule({
   declarations: [
@@ -31,7 +28,9 @@ const appRoutes: Routes = [
     EmployeesComponent,
     EmployeeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HighlightDirective,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -39,8 +38,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    RouterModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule
   ],
   providers: [CourseService],
   bootstrap: [AppComponent]

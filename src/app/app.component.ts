@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'clientApp';
-  dataToChildFormParent: string = 'Message from appComponent'
+  dataToChildFormParent: string = 'Message from appComponent';
 }
