@@ -1,0 +1,17 @@
+<h1>
+  rxJS
+</h1>
+<h2>Observables</h2>
+<h3> {{numbers$ | async}}</h3>
+
+<h2>Operators</h2>
+<h3> Of: {{myArrayOf$ | async}}</h3>
+----
+<h3> From: {{myArrayFrom$ | async}}</h3>
+----
+<h3> Tap: {{myArrayTap$ | async}}</h3>
+----
+<h3> Map: {{myArrayMap$ | async}}</h3>
+<h2>Subjects</h2>
+
+<p *ngFor="let item of subject | async">{{ item }}</p>

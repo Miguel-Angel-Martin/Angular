@@ -3,21 +3,20 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-employee',
   templateUrl: './employee.component.html',
-  styleUrls: ['./employee.component.css']
+  styleUrls: ['./employee.component.css'],
 })
 export class EmployeeComponent implements OnInit {
-  name: string = "Miguel";
-  surname: string = "Martín";
-  company: string = "";
+  name: string = 'Miguel';
+  surname: string = 'Martín';
+  company: string = '';
   age: number = 18;
-  lightStatus: string = "GREEN";
+  lightStatus: string = 'GREEN';
 
-  statusList: Array<string> = ['RED', 'GREEN', 'YELLOW', 'BROKE']
+  statusList: Array<string> = ['RED', 'GREEN', 'YELLOW', 'BROKE'];
 
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 
   registerProperty = false;
   enableProperty = false;
@@ -34,11 +33,13 @@ export class EmployeeComponent implements OnInit {
     this.lightStatus = status;
   }
 
-  companyName(company) { // appending the updated value to the variable
+  companyName(company) {
+    // appending the updated value to the variable
     this.company = company.target.value;
   }
 
-  employeeAge(age) { // appending the updated value to the variable
+  employeeAge(age) {
+    // appending the updated value to the variable
     this.age = age.target.value;
   }
 }
