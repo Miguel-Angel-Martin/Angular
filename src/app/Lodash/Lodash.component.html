@@ -1,0 +1,23 @@
+<div class="movies">
+  <h3 style="color: blue">Implementing Lodash in Angular</h3>
+  <p>Does movie Batman Begin exist in movies list by Lodash find : {{ movieExist }}</p>
+  <p>Does movie ABABAB exist in movies list by Lodash find : {{ movieNotExist }}</p>
+
+  <form>
+    <label>Find movies by rating more than</label><br />
+    <input name="rating" [(ngModel)]="rating" #ratingCtrl="ngModel">
+    <button (click)="findMoviesByRating(ratingCtrl.value)">Find movies</button>
+  </form>
+
+  <div *ngFor="let movie of moviesByRating">
+    {{ movie.name }} - {{ movie.rating }}
+  </div><br /><br />
+
+  <div>
+    <label>Select movie to remove using lodash pull methods:</label>
+    <select name="removeName" [(ngModel)]="removeName" #removeCtrl="ngModel">
+      <option *ngFor="let item of names"> {{ item }} </option>
+    </select>
+    <button (click)="removeItem(removeCtrl.value)">Remove Item</button>
+  </div>
+</div>

@@ -25,6 +25,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { ObservablesComponent } from './observables/observables.component';
+import { LodashComponent } from './Lodash/Lodash.component';
 /**
  *
  */
@@ -39,6 +40,7 @@ import { ObservablesComponent } from './observables/observables.component';
     HomeComponent,
     HeaderComponent,
     ObservablesComponent,
+    LodashComponent,
   ],
   imports: [
     BrowserModule,
