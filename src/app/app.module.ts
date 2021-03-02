@@ -20,12 +20,12 @@ import { HomeComponent } from './home/home.component';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
+import { MaterialModules } from '../services/material.module';
 import { ObservablesComponent } from './observables/observables.component';
 import { LodashComponent } from './Lodash/Lodash.component';
+import { FilterComponent } from './filter/filter.component';
+import { FilterPipe } from './pipes/filter.pipe';
+import { FilterPipeComponent } from './filter-pipe/filter-pipe.component';
 /**
  *
  */
@@ -41,6 +41,9 @@ import { LodashComponent } from './Lodash/Lodash.component';
     HeaderComponent,
     ObservablesComponent,
     LodashComponent,
+    FilterComponent,
+    FilterPipe,
+    FilterPipeComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,10 +56,7 @@ import { LodashComponent } from './Lodash/Lodash.component';
     FormsModule,
     CommonModule,
     LayoutModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
+    MaterialModules,
   ],
   providers: [CourseService],
   bootstrap: [AppComponent],

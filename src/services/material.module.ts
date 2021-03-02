@@ -42,6 +42,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 import { OverlayModule } from '@angular/cdk/overlay';
+import { MatTableDataSource } from '@angular/material/table';
 
 @NgModule({
   exports: [
@@ -91,7 +92,7 @@ import { OverlayModule } from '@angular/cdk/overlay';
     ScrollingModule,
   ],
 })
-export class DemoMaterialModule {}
+export class MaterialModules {}
 
 /**  Copyright 2020 Google LLC. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that
