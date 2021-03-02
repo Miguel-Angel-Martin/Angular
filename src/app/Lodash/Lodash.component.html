@@ -1,6 +1,8 @@
 <div class="movies">
   <h3 style="color: blue">Implementing Lodash in Angular</h3>
+
   <p>Does movie Batman Begin exist in movies list by Lodash find : {{ movieExist }}</p>
+
   <p>Does movie ABABAB exist in movies list by Lodash find : {{ movieNotExist }}</p>
 
   <form>
@@ -20,4 +22,14 @@
     </select>
     <button (click)="removeItem(removeCtrl.value)">Remove Item</button>
   </div>
+</div>
+<div>
+  <div *ngFor="let item of hellos; index as i">
+    Render with times:{{i}}--{{item}}
+  </div>
+
+  <div>
+    <button (click)="render()">Render</button>
+  </div>
+
 </div>
