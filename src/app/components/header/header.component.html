@@ -1,0 +1,65 @@
+<mat-toolbar color="primary">
+  <span>Angular</span>
+  &nbsp;
+  <button type="button" aria-label="Toggle sidenav" mat-button routerLink="/Home">
+    Home
+  </button>
+  &nbsp;
+  <button type="button" aria-label="Toggle sidenav" mat-button mat-display-1 routerLink="/Employees">
+    Employees
+  </button>
+  &nbsp;
+  <button type="button" aria-label="Toggle sidenav" mat-button routerLink="/Employee">
+    Employee
+  </button>
+  &nbsp;
+  <button type="button" aria-label="Toggle sidenav" mat-button routerLink="/rxJS">
+    rxJS
+  </button>
+  &nbsp;
+  <button type="button" aria-label="Toggle sidenav" mat-button routerLink="/Lodash">
+    Lodash
+  </button>
+  &nbsp;
+  <button type="button" aria-label="Toggle sidenav" mat-button routerLink="/Filter">
+    Filter
+  </button>
+  &nbsp;
+  <button type="button" aria-label="Toggle sidenav" mat-button routerLink="/FilterPipe">
+    FilterPipe
+  </button>
+  <button type="button" aria-label="Toggle sidenav" mat-button routerLink="/Autocomplete">
+    Autocomplete
+  </button>
+  <button type="button" aria-label="Toggle sidenav" mat-button routerLink="/AngularMaterial">
+    AngularMaterial
+  </button>
+  <button mat-button [matMenuTriggerFor]="menu" aria-label="Toggle sidenav">Products</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="Products/List">
+      <mat-icon>list</mat-icon>List Product
+    </button>
+    <button mat-menu-item routerLink="Products/Add">
+      <mat-icon>control_point</mat-icon>Add Product
+    </button>
+    <button mat-menu-item routerLink="Products/Detail">
+      <mat-icon>info</mat-icon>Detail product
+    </button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="menuGraphs" aria-label="Toggle sidenav">Charts</button>
+  <mat-menu #menuGraphs="matMenu">
+    <button mat-menu-item routerLink="Graphs/Lines">
+      <mat-icon>stacked_line_chart</mat-icon>Lines
+    </button>
+    <button mat-menu-item routerLink="Graphs/Bars">
+      <mat-icon>bar_chart</mat-icon>Bars
+    </button>
+    <button mat-menu-item routerLink="Graphs/Radar">
+      <mat-icon>radar</mat-icon>Radar
+    </button>
+    <button mat-menu-item routerLink="Graphs/Doughnut">
+      <mat-icon>data_usage</mat-icon>Doughnut
+    </button>
+  </mat-menu>
+</mat-toolbar>

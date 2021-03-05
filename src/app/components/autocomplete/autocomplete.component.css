@@ -1,0 +1,11 @@
+.example-card {
+  max-width: 100%;
+  align-content: center;
+  text-align: center;
+}
+main {
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+}
+

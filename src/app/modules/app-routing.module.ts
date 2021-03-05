@@ -1,0 +1,56 @@
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { EmployeesComponent } from '../components/employees/employees.component';
+import { EmployeeComponent } from '../components/employee/employee.component';
+import { HomeComponent } from '../components/home/home.component';
+import { ObservablesComponent } from '../observables/observables.component';
+import { LodashComponent } from '../components/Lodash/Lodash.component';
+import { FilterComponent } from '../components/filter/filter.component';
+import { FilterPipeComponent } from '../components/filter-pipe/filter-pipe.component';
+import { RouteGuardGuard } from '../../guards/route-guard.guard';
+import { AutocompleteComponent } from '../components/autocomplete/autocomplete.component';
+import { AngularMaterialComponent } from '../components/angular-material/angular-material.component';
+
+const routes: Routes = [
+  { path: 'Employee', component: EmployeeComponent },
+  { path: 'Employees', component: EmployeesComponent },
+  { path: 'Home', component: HomeComponent },
+  { path: 'rxJS', component: ObservablesComponent },
+  { path: 'Lodash', component: LodashComponent },
+  {
+    path: 'Filter',
+    component: FilterComponent,
+    canActivate: [RouteGuardGuard],
+  },
+  {
+    path: 'FilterPipe',
+    component: FilterPipeComponent,
+    canActivate: [RouteGuardGuard],
+  },
+  { path: '', redirectTo: '/Home', pathMatch: 'full' },
+  { path: 'Autocomplete', component: AutocompleteComponent },
+  { path: 'AngularMaterial', component: AngularMaterialComponent },
+
+  // lazy load modules
+  {
+    path: 'Products',
+    loadChildren: () =>
+      import('../modules/products/products.module').then(
+        (module) => module.ProductsModule
+      ),
+  },
+  {
+    path: 'Graphs',
+    loadChildren: () =>
+      import('../modules/graphs/graphs.module').then(
+        (module) => module.GraphsModule
+      ),
+  },
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+  providers: [RouteGuardGuard],
+})
+export class AppRoutingModule {}

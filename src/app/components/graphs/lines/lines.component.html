@@ -1,0 +1,13 @@
+<div class="mat-display-2">Lines</div>
+<hr>
+
+<mat-grid-list cols="5" rowHeight="3:5">
+  <mat-grid-tile class="mat-grid-tile-white"></mat-grid-tile>
+  <mat-grid-tile colspan="3">
+
+    <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType" [plugins]="lineChartPlugins">
+    </canvas>
+  </mat-grid-tile>
+  <mat-grid-tile class="mat-grid-tile-white"></mat-grid-tile>
+</mat-grid-list>
+<br>

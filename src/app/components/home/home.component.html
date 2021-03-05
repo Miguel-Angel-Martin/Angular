@@ -1,0 +1,20 @@
+<h1>Home</h1>
+<!-- <div>
+  <input type="radio" name="colors" (click)="color='blue'">Blue
+  <input type="radio" name="colors" (click)="color='green'">Green
+  <input type="radio" name="colors" (click)="color='Cyan'">Cyan
+</div> -->
+
+
+<section class="example-section">
+  <label class="example-margin">Directives:</label>
+  <mat-radio-group>
+    <mat-radio-button class="example-margin" value="after" (click)="color='blue'">Blue</mat-radio-button>
+    <mat-radio-button class="example-margin" value="after" (click)="color='green'">Green</mat-radio-button>
+    <mat-radio-button class="example-margin" (click)="color='Cyan'">Cyan</mat-radio-button>
+  </mat-radio-group>
+</section>
+<mat-card [appHighlight]="color">
+  Directive(mouse over here)
+</mat-card>
+<br>
