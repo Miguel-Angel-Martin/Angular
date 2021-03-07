@@ -11,6 +11,7 @@
 			"datepicker",
 			"devkit",
 			"sidenav"
-		]
+		],
+		"python.pythonPath": "C:\\Users\\Miguel\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
 	}
 }

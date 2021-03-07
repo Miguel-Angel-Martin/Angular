@@ -52,3 +52,7 @@ https://github.com/albertoandroid/AngularFirstPart/tree/master/src/app
 RxJS: https://www.youtube.com/watch?v=p_Aa2B1V5vk
 
 https://material.angular.io/guide/schematics
+
+#Pagination
+
+https://www.youtube.com/watch?v=hV5xmSOW6C8&list=PLezsbUDiwcpmhNiMzVPYJXV0Rqn71G4PU&index=14

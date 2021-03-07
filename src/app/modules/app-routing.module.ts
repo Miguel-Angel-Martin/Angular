@@ -10,6 +10,7 @@ import { FilterPipeComponent } from '../components/filter-pipe/filter-pipe.compo
 import { RouteGuardGuard } from '../../guards/route-guard.guard';
 import { AutocompleteComponent } from '../components/autocomplete/autocomplete.component';
 import { AngularMaterialComponent } from '../components/angular-material/angular-material.component';
+import { PaginationComponent } from 'app/components/pagination/pagination.component';
 
 const routes: Routes = [
   { path: 'Employee', component: EmployeeComponent },
@@ -46,6 +47,7 @@ const routes: Routes = [
         (module) => module.GraphsModule
       ),
   },
+  { path: 'Pagination', component: PaginationComponent },
 ];
 
 @NgModule({
