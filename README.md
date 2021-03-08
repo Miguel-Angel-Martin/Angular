@@ -44,15 +44,19 @@ git branch -M main
 git push -u origin main
 ```
 
+# Servicios
+
 https://www.youtube.com/watch?v=kM4RvcUisV0&list=PLN5jmnTStJNg44NzPJjPPFmCZCLpH8ja1&index=18
 
 https://github.com/albertoandroid/AngularFirstPart/tree/master/src/app
 
+# RxJS. 
+https://www.youtube.com/watch?v=p_Aa2B1V5vk
 
-RxJS: https://www.youtube.com/watch?v=p_Aa2B1V5vk
+# Angular material.
 
 https://material.angular.io/guide/schematics
 
-#Pagination
+# Pagination.
 
 https://www.youtube.com/watch?v=hV5xmSOW6C8&list=PLezsbUDiwcpmhNiMzVPYJXV0Rqn71G4PU&index=14

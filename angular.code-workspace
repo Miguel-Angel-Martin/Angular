@@ -12,6 +12,6 @@
 			"devkit",
 			"sidenav"
 		],
-		"python.pythonPath": "C:\\Users\\Miguel\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
+		"python.pythonPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python37_64\\python.exe"
 	}
 }

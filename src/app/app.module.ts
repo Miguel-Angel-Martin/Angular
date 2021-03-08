@@ -34,6 +34,7 @@ import { AngularMaterialComponent } from './components/angular-material/angular-
 //graphs
 import { ChartsModule } from 'ng2-charts';
 import { PaginationComponent } from './components/pagination/pagination.component';
+import { PaginatePipe } from './pipes/paginate.pipe';
 /**
  *
  */
@@ -55,6 +56,7 @@ import { PaginationComponent } from './components/pagination/pagination.componen
     AutocompleteComponent,
     AngularMaterialComponent,
     PaginationComponent,
+    PaginatePipe,
   ],
   imports: [
     BrowserModule,
