@@ -1,5 +1,7 @@
+<mat-paginator [length]="data.length" [pageSize]="page_size" [pageSizeOptions]="pageSizeOptions" (page)="handlePage($event)" showFirstLastButtons>
+</mat-paginator>
 <ul>
-  <li *ngFor="let user of data">
+  <li *ngFor="let user of data | paginate: page_size: page_number">
     <ul>
       <li *ngFor="let prop of user | keyvalue">
         {{prop.key}}: {{prop.value}}
