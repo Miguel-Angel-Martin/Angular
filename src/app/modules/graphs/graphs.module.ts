@@ -7,7 +7,7 @@ import { BarsComponent } from '../../components/graphs/bars/bars.component';
 import { LinesComponent } from 'app/components/graphs/lines/lines.component';
 import { RadarComponent } from 'app/components/graphs/radar/radar.component';
 import { DoughnutComponent } from 'app/components/graphs/doughnut/doughnut.component';
-import { MaterialModules } from '../../../services/material.module';
+import { MaterialModules } from '../../modules/material.module';
 import { ChartsModule } from 'ng2-charts';
 @NgModule({
   declarations: [

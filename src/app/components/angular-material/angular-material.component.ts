@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
-import { Photo } from 'interfaces/photo';
-import { PhotosService } from '@services/photos.service';
+import { Photo } from 'app/interfaces/photo';
+import { PhotosService } from '../../services/photos.service';
 @Component({
   selector: 'app-angular-material',
   templateUrl: './angular-material.component.html',

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PeriodicElement } from '../../../interfaces/periodic-element';
+import { PeriodicElement } from '../../interfaces/periodic-element';
 import { MatTableDataSource } from '@angular/material/table';
 
 @Component({

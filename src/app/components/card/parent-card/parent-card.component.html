@@ -1,0 +1,8 @@
+<app-card *ngFor="let new of _news">
+
+  <mat-card-title class="_title">{{new.title}}</mat-card-title>
+  <mat-card-subtitle class="_id">{{new.id}}</mat-card-subtitle>
+  <p class="_body">
+    {{new.body}}
+  </p>
+</app-card>

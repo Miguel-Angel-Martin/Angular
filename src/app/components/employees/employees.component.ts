@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { ICourse } from 'interfaces/course';
-import { CourseService } from '../../../services/course.service';
+import { ICourse } from 'app/interfaces/course';
+import { CourseService } from '../../services/course.service';
 @Component({
   selector: 'app-employees',
   templateUrl: './employees.component.html',

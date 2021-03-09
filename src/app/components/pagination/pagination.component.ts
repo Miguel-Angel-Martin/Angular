@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PaginationService } from '../../../services/pagination.service';
-import { IPagination } from '../../../interfaces/pagination';
+import { PaginationService } from '../../services/pagination.service';
+import { IPagination } from '../../interfaces/pagination';
 import { PageEvent } from '@angular/material/paginator';
 @Component({
   selector: 'app-pagination',
